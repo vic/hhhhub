@@ -2,9 +2,19 @@
   <%= javascript_include_tag 'timeline/public' %>
 <% end %>
 
-
-Timeline goes here!!
-
-<%= link_to "Login with facebook", user_omniauth_authorize_path(:facebook) %>
-<%= link_to "Login with twitter", user_omniauth_authorize_path(:twitter) %>
-<%= link_to "Login with github", user_omniauth_authorize_path(:github) %>
+<div class="timeline">
+  <div class="publication link">
+    <div class="publication-main">
+      <div class="publication-icon">
+        <i class="i i-publication-link"></i>
+      </div>
+      <div class="publication-content">
+        <h5><a href="Arrow.js un nuevo framework hecho por mi.">Arrow.js un nuevo framework hecho por mi.</a></h5>
+        <span class="url-link">http://martinwolf.org/2014/05/07/the-new-srcset-and-sizes-explained/</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget metus ac risus tincidunt volutpat. 
+Donec consectetur enim at posuere vehicula. Aliquam aliquam tristique semper. In iaculis sapien eget odio rutrum,
+nec fringilla odio commodo. Praesent lobortis adipiscing nibh eget fermentum.</p>
+      </div>
+    </div>
+  </div>
+</div>

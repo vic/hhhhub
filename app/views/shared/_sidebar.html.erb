@@ -1,1 +1,18 @@
-Hola
+<div class="sidebar col-2">
+  <div class="brand">
+    <%= link_to 'Inicio', root_path, class: 'hub-logg' %>
+  </div>
+  <div class="main-nav">
+    <ul>
+      <li><%= link_to 'Timeline', '#' %></li>
+      <li><%= link_to 'Eventos', '#' %></li>
+      <li><%= link_to 'Links', '#' %></li>
+      <li><%= link_to 'HHH’s', '#' %></li>
+      <li><%= link_to 'Discusiones', '#' %></li>
+    </ul>
+  </div>
+  <div class="sidebar-separator"></div>
+  <%= link_to "Facebook", user_omniauth_authorize_path(:facebook) %> <br>
+  <%= link_to "Twitter", user_omniauth_authorize_path(:twitter) %> <br>
+  <%= link_to "Github", user_omniauth_authorize_path(:github) %>
+</div>

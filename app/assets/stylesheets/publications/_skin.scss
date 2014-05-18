@@ -1,0 +1,16 @@
+
+// Publications Skin
+.publication {
+  @extend .box-style;
+
+  p {
+    @include text-size-regular;
+  }
+
+  &.link {
+    .url-link {
+      color: $meta-color;
+      @include text-size-x-small;
+    }
+  }
+}

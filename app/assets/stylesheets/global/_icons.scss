@@ -1,0 +1,9 @@
+
+// Icons
+.i {
+  background: url('pack.png') no-repeat;
+  vertical-align: middle;
+  @include inline-block;
+}
+
+.i-publication-link { width: 52px; height: 52px; background-position: 0 -23px; }

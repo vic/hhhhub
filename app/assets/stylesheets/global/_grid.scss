@@ -1,0 +1,7 @@
+
+// Grid with Neat
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    @include span-columns($i);
+  }
+}

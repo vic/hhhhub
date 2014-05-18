@@ -1,0 +1,84 @@
+
+// Global Sking
+* {
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: $font-global;
+  @include text-size-regular;
+}
+
+a {
+  color: $link-color;
+
+  &:hover {
+    color: lighten($link-color, 10%);
+  }
+}
+
+p {
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-serif;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.wrapper {
+  @include outer-container;
+}
+
+.box-style {
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  border-radius: $radius;
+}
+
+.sidebar {
+  .brand {
+    a {
+      background: url('pack.png') 0 0;
+      @include hide-text;
+    }
+  }
+
+  .main-nav ul {
+    list-style: none;
+
+    li a {
+      font-size: 14px;
+      color: $meta-color;
+    }
+  }
+
+  .sidebar-separator {
+    background: #b3b3b3;
+  }
+}

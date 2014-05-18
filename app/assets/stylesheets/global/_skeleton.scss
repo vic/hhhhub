@@ -1,0 +1,30 @@
+
+// Global Skeleton
+
+.wrap {
+  margin-top: 45px;
+}
+
+.sidebar {
+  .brand {
+    a {
+      display: block;
+      width: 116px;
+      height: 23px;
+    }
+  }
+
+  .main-nav {
+    margin-top: 10px;
+
+    ul li {
+      padding: 3px 0;
+    }
+  }
+
+  .sidebar-separator {
+    width: 10px;
+    height: 2px;
+    margin: 10px 0;
+  }
+}
