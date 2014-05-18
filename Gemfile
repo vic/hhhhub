@@ -58,3 +58,6 @@ gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 gem 'oj'
 gem 'gon'
+
+gem 'bourbon'
+gem 'neat'

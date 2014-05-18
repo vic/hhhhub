@@ -4,11 +4,15 @@
   <title>HHHhub</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= yield :head %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="wrap">
+    <div class="sidebar">
+      <%= render partial: 'shared/sidebar' %>
+    </div>
+    <%= yield %>
+  </div>
 </body>
 </html>

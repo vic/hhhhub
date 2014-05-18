@@ -1,5 +1,9 @@
-Timeline goes here!!
+<% content_for :head do %>
+  <%= javascript_include_tag 'timeline/public' %>
+<% end %>
 
+
+Timeline goes here!!
 
 <%= link_to "Login with facebook", user_omniauth_authorize_path(:facebook) %>
 <%= link_to "Login with twitter", user_omniauth_authorize_path(:twitter) %>

@@ -1,3 +1,2 @@
 class TimelineController < ApplicationController
-
 end
