@@ -6,5 +6,8 @@ class User < ActiveRecord::Base
          :omniauthable,  :omniauth_providers => [:facebook, :twitter, :github]
 
   has_many :identities
-  
+  has_many :links
+  has_many :events
+  has_many :attending_events, :class_name => 'EventAttendee'
+
 end
